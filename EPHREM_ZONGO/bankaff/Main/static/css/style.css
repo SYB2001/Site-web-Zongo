@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.banner img {
+    width: 100%;
+   
+}
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+.media-body {
+    text-align: left !important;;
+    
+}
+.topbar {
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-nav .logo {
+    margin-right: 50px;
+}
+
+.left-nav .logo > a > img {
+    width: 50px;
+}
+
+.topbar nav {
+    float: right;
+}
+
+.logo  {
+    position: absolute;
+    left: 30px;
+    top: 20px;  
+    font-weight: bold;
+}
+
+.topbar nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.topbar nav ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.topbar nav a:hover{ 
+    color: #007e43;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.topbar nav ul>li>a.active {
+    color: #007e43;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.article {
+    position: relative;
+    margin: 0px 0;
+    padding-left: 0px;
+    min-height: 203px;
+}
+
+
+.article img {
+    position:absolute;
+    left: 15px;
+    top: 0px;
+    width: 205px;
+    float: left;
+}
+
+
+.texte {
+    margin: 80px 0px 0px 255px;
+}
+.texte p {
+margin-top: 10px;
+}
+
+.services{
+    text-align: center;
+}
+
+.joli {
+   
+    text-align : center;
+    color: white;
+    font-weight: bold;
+    border : 0;
+    width  : 21em;
+    height : 12em;
+    background-color:chartreuse;
+    display: inline-flex;
+    align-items: center;
+    margin: 82px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    border-radius: 10px;
+  }
+
+  #F {
+    background-color:rgb(55, 150, 228); 
+  }
+  #F a {
+    font-size: x-large;
+    text-decoration: none;
+    padding-left: 100px;
+    color: white;
+  }
+
+  #I {
+      background-color: rgb(167, 92, 236);
+  }
+
+  #I a {
+    font-size: x-large;
+    text-decoration: none;
+    padding-left: 50px;
+    color: white;
+  }
+
+
+  #B a{
+    font-size: x-large;
+    text-decoration: none;
+    padding-left: 100px;
+    color: white;
+
+  }
+
+  .partner a {
+    display: inline-flex;
+    padding: 20px;
+  }
+
+  .partner{
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .partner h1 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+  }
+
+  table{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90em;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-collapse: separate;
+      border-spacing: 0px 5px;
+      padding-right: 10px; 
+  }
+  
+  
+  table th {
+    
+    font-weight: 800;
+    background-color: rgba(175, 173, 173, 0.925);
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  
+
+  #vert{
+     background-color:rgb(166, 206, 93);
+      border-radius: 5px;
+      width  : 10em;
+      height: 2em;
+      
+  }
+
+  #jaune{
+      background-color: rgba(224, 180, 99, 0.849);
+      border-radius: 5px;
+      width  : 10em;
+      height:2em ;
+  }
+
+  #violet {
+    background-color:rgb(230, 163, 226);
+    border-radius: 5px;
+    width  : 10em;
+    height:2em;
+  }
+  
+  #bleu {
+    background-color:skyblue;
+    border-radius: 5px;
+    width  : 10em;
+    height: 2em;
+  }
+
+  .space td {
+      padding-top: 20px;  
+  }
+
+.bordure {
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
+    border: solid black 2px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+form.formulaire {
+    display: table;
+}
+
+div.formulaire {
+    display: table-row;
+    
+}
+
+
+
+label, input {
+    display: table-cell;
+    width: 15cm;
+    height: 2em;
+    padding: 20px;
+    margin-right: 20px;
+}
+#email{
+    margin-top: 30px;
+}
+
+#subject{
+    margin-top: 4px;
+}
+
+#name{
+    padding: 70px;
+    margin-top: 20px;
+}
+
+#submit{
+    background-color: cornflowerblue;
+    width: 7cm;
+    height: 1cm;
+    position: relative;
+    left: 305px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+       

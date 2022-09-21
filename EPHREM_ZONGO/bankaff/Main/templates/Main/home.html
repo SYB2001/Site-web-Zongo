@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bankaf{% endblock %}</title>
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+   
+</head>
+<body>
+    <header class="topbar">
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="{% url 'home' %}">
+                    Bankaf
+                    </a>
+                    
+                </div>
+                <ul>
+                    <li><a href="{% url 'home' %}" class="active">Accueil</a></li>
+                    <li><a href="{% url 'agences' %}">Agences</a></li>
+                    <li><a href="{% url 'clients' %}">Clients</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="{% static 'images/header-accueil.png' %}">
+       
+    </div>
+
+    <div class="body">
+        <main class="main">
+            <div class="container">
+                <article class="article">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'images/profile-director.png' %}" >
+                    </a>
+                    <div class="texte">
+                        <p> Jeune passionnée de finance et de technologie , je suis titulaire d'une licence professionnel en technique bancaire et financière du Centre Africain d'Etude superieur en Gestion(CESAG) basé à Dakar(SENEGAL).
+                            
+                           <p> Cette formation m'a permis de m'iminitier au langage de programmation python et au developpement d’application web avec Base de données.
+                            Ce site web a été concu par moi sous la supervision de <a href="https://www.linkedin.com/in/lionnel-patrick-dooko-219183b7">Mr DOOKO</a> au terme du cours de developpement d’application web avec Base de données.
+                            </p>
+                            
+                            <p><h3>Ephrem Sidbéwendé Yann Benoît ZONGO </h3></p>
+   
+                        
+                        </div><!--//media-body-->
+                    </div><!--//profile-teaser-->
+<div class="services">
+    <h1>
+        NOS SERVICES
+    </h1>
+</div>
+<div class="joli" id="B"><a href="#">BANQUE</a></div> <div class="joli" id="F"><a href="#">FINANCES</a></div> <div class="joli" id="I"><a href="#">INVESTISSEMENTS</a></div>
+
+<div class="partner"> 
+    <h1>
+        Ils nous font confiance
+    </h1>
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/partenaire-1.png' %}" >
+    </a>
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/partenaire-2.png' %}" >
+    </a>
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/partenaire-3.png' %}" >
+    </a>
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/partenaire-4.png' %}" >
+    </a>
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/partenaire-5.png' %}" >
+    </a>
+</div>
+    
+
+
+                </article>
+
+            </div>
+
+        </main>
+      
+</body>
+</html>

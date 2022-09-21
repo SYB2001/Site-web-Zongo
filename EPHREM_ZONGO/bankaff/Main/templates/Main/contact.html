@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bankaf{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    
+</head>
+{% block main %}
+<body>
+    <header class="topbar">
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="{% url 'home' %}">
+                    Bankaf
+                    </a>
+                    
+                </div>
+                <ul>
+                    <li><a href="{% url 'home' %}" >Accueil</a></li>
+                    <li><a href="{% url 'agences' %}">Agences</a></li>
+                    <li><a href="{% url 'clients' %}" >Clients</a></li>
+                    <li><a href="{% url 'contact' %}" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="{% static 'images/header-contact.png' %}" >
+    </div>
+    <div class="bordure">
+    <form  method="post" class="formulaire">
+        {% csrf_token %}
+        
+        <div class="formulaire">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required>
+                 
+        
+        </div>
+        <div class="formulaire">
+            <label for="subject">SUBJECT</label>
+            <input type="text" name="subject" id="subject" required>
+            
+            
+        </div>
+        <div class="formulaire">
+            <label for="message">MESSAGE</label>
+            <input type="text" name="message" id="name" required>
+            <input type="submit" value="ENVOYER" id="submit">
+            
+           
+           
+        </div>
+        
+    </form>
+    </div>
+    
+</body>
+{% endblock %}

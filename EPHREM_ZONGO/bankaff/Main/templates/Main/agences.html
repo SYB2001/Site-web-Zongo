@@ -1,0 +1,124 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bankaf{% endblock %}</title>
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+{% block main %}
+
+<body>
+    <header class="topbar">
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="{% url 'home' %}">
+                    Bankaf
+                    </a>
+                    
+                </div>
+                <ul>
+                    <li><a href="{% url 'home' %}" >Accueil</a></li>
+                    <li><a href="{% url 'agences' %}" class="active">Agences</a></li>
+                    <li><a href="{% url 'clients' %}">Clients</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="{% static 'images/headeragence.png' %}" >
+    </div>
+    <div class="partner"> 
+        <h1>NOS AGENCES</h1>
+    </div>
+    
+
+    <div>
+        <table>
+
+            <tr>
+                <th>N</th>
+                <th>Nom d’agence</th>
+                <th>Responsable</th>
+                <th>Contact</th>
+                <th>Adresse</th>
+                <th>Ville</th>
+                
+            </tr>
+
+            <tr class="space">
+
+                <td class>1</td>
+                <td>Cheik anta diop</td>
+                <td>MALICK DIOP</td>
+                <td>33 876 56 45</td>
+                <td>123 avenue Cheik anta diop</td>
+                <td>Dakar</td>
+
+            </tr>
+            <tr>
+
+                <td>2</td>
+                <td>Cheik anta diop</td>
+                <td>MALICK DIOP</td>
+                <td>33 876 56 45</td>
+                <td>123 avenue Cheik anta diop</td>
+                <td>Dakar</td>
+
+            </tr>
+            <tr>
+
+                <td>3</td>
+                <td>Cheik anta diop</td>
+                <td>MALICK DIOP</td>
+                <td>33 876 56 45</td>
+                <td>123 avenue Cheik anta diop</td>
+                <td>Dakar</td>
+
+            </tr>
+            <tr>
+
+                <td>4</td>
+                <td>Cheik anta diop</td>
+                <td>MALICK DIOP</td>
+                <td>33 876 56 45</td>
+                <td>123 avenue Cheik anta diop</td>
+                <td>Dakar</td>
+
+            </tr>
+        {% for agence in agence_key %}
+            <tr>
+                <td>{{ agence.id }}</td>
+                <td>{{ agence.nom}}</td>
+                <td>{{ agence.responsable }}</td>
+                <td>{{ agence.phone }}</td>
+                <td>{{ agence.adresse }}</td>
+                <td>{{ agence.ville }}</td>
+           
+    
+            </tr>
+        {% endfor%}
+           
+     
+                
+                
+
+            
+         </table>
+
+    </div>
+    
+</body>
+{% endblock %}
+
+    
